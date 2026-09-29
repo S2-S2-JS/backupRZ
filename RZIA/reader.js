@@ -134,7 +134,6 @@
 
     function paintNames() {
       pair.textContent = brand.pair || "ENTY";
-      document.title = brand.pair || "ENTY";
       for (const node of document.querySelectorAll("[data-name]")) {
         node.textContent = nameOf(node.dataset.name);
       }
