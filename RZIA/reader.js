@@ -133,10 +133,15 @@
     }
 
     function paintNames() {
-      pair.textContent = brand.pair || "ENTY";
+      const fixedTitle = "RZIA"; // 여기에 원하시는 타이틀 입력
+  
+      if (pair) pair.textContent = fixedTitle;
+      document.title = fixedTitle;
+  
       for (const node of document.querySelectorAll("[data-name]")) {
         node.textContent = nameOf(node.dataset.name);
       }
+      
       for (const button of document.querySelectorAll("[data-portrait]")) {
         button.setAttribute("aria-label", `${nameOf(button.dataset.portrait)} 이미지 바꾸기`);
       }
