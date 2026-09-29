@@ -66,7 +66,7 @@
       || MANIFEST.characters[id]?.label
       || id;
 
-const accountOf = id => MANIFEST.characters[id]?.account || id;
+    const accountOf = id => MANIFEST.characters[id]?.account || id;
 
     function shrink(file, max) {
       return new Promise((resolve, reject) => {
