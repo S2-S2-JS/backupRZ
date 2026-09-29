@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>8월 29일</title>
-  <script id="enty-theme-boot">
+  <script id="enty-theme-RZ-boot">
     (function () {
       var root = document.documentElement;
       function readable(hex) {
@@ -19,7 +19,7 @@
         var hash = (location.hash.match(/theme=([^&]+)/) || [])[1];
         var raw = hash
           ? atob(decodeURIComponent(hash))
-          : localStorage.getItem("enty-theme") || "{}";
+          : localStorage.getItem("enty-theme-RZ") || "{}";
         var state = JSON.parse(raw) || {};
         var mode = state.mode || "auto";
         if (mode === "auto") {
@@ -37,7 +37,7 @@
       } catch (e) {
       }
       try {
-        var saved = JSON.parse(localStorage.getItem("enty-avatars") || "{}");
+        var saved = JSON.parse(localStorage.getItem("enty-avatars-RZ") || "{}");
         var rules = "";
         var accounts = {"char1":"@Ivar","char2":"@Abagnale"};
         for (var name in accounts) {
@@ -50,7 +50,7 @@
         }
         if (rules) {
           var style = document.createElement("style");
-          style.id = "enty-avatar-style";
+          style.id = "enty-avatar-RZ-style";
           style.textContent = rules;
           document.head.appendChild(style);
         }
@@ -69,7 +69,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">자⋯⋯. 선착순 한 명에게 내 표를 주마. (비밀 투표가 뭐지?)</div>
@@ -81,7 +81,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">뭔진 모르겠지만 주시죠.</div>
@@ -93,7 +93,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">자네는 뭘 골랐는데?</div>
@@ -105,7 +105,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">사람이 일관적이어야죠.</div>
@@ -117,7 +117,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">투명해서 좋군. (투표하러 감)</div>
@@ -129,7 +129,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">그땐 반대 의견 아니셨습니까?</div>
@@ -141,7 +141,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">감동적인 설명이 있고, 그렇지 못한 설명이 있네. 고르시게.</div>
@@ -153,7 +153,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">둘 다 들을 겁니다.</div>
@@ -165,7 +165,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">욕심쟁이군. 하나만 골라.</div>
@@ -177,7 +177,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">그렇지 못한 쪽으로 듣죠.</div>
@@ -189,7 +189,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">왜 내 치부를 들추는 방향으로 가지?</div>
@@ -201,7 +201,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">제가 누구라고 생각하시는 겁니까?</div>
@@ -213,7 +213,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">내가 자초했군. (인정한다.) 라 로데타가 무사하리라 생각하니 다른 것들은 아무래도 좋아져서⋯⋯. '내가 살 것도 아닌데 아무렴 어떤가' 하는 생각이 들었네.</div>
@@ -225,7 +225,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">참고로 감동쪽은 '네 연설에 감명받아서'다.</div>
@@ -237,7 +237,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">(역시 치부를 들추면 모든 답을 알게 된다는 헛소리를 삼켰다.) 어떤 점에 감명받았는지 좀 더 구체적으로 듣고 싶습니다.</div>
@@ -249,7 +249,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">(무언가를 직감하고 어깨 때린다.) 내가 여기서 말하지 않으면 네가 짐작하고 불어버릴지 고민이 되는군⋯⋯.</div>
@@ -261,7 +261,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">(엄살 부리면서 즐겁게 맞는다.) 제가 어딜 가서 불겠습니까? (갸우뚱.)</div>
@@ -273,7 +273,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">내 마음이 네 입으로 나온다는 부분 자체가⋯⋯.</div>
@@ -285,7 +285,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">그러면 짐작만 하고 말은 안 하겠습니다.</div>
@@ -297,7 +297,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">"소르테 서밋이 없었다면," ⋯⋯난 용서하는 법을 몰랐겠지. 지금의 나는 타인의 운명을 애틋하게 여길 수도 있어. (같은 말들이다.) 그걸로 된 것 같아.</div>
@@ -309,7 +309,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">좋습니다. 당신도 나와 같군요. (웃으며, 손을 잡는다. 질문을 앞세우지 않았지만 이것은 「동행」이다.) 이제 갈까요, 안눈치아타.</div>

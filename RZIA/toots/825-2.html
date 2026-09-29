@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>825-2</title>
-  <script id="enty-theme-boot">
+  <script id="enty-theme-RZ-boot">
     (function () {
       var root = document.documentElement;
       function readable(hex) {
@@ -19,7 +19,7 @@
         var hash = (location.hash.match(/theme=([^&]+)/) || [])[1];
         var raw = hash
           ? atob(decodeURIComponent(hash))
-          : localStorage.getItem("enty-theme") || "{}";
+          : localStorage.getItem("enty-theme-RZ") || "{}";
         var state = JSON.parse(raw) || {};
         var mode = state.mode || "auto";
         if (mode === "auto") {
@@ -37,7 +37,7 @@
       } catch (e) {
       }
       try {
-        var saved = JSON.parse(localStorage.getItem("enty-avatars") || "{}");
+        var saved = JSON.parse(localStorage.getItem("enty-avatars-RZ") || "{}");
         var rules = "";
         var accounts = {"char1":"@Ivar","char2":"@Abagnale"};
         for (var name in accounts) {
@@ -50,7 +50,7 @@
         }
         if (rules) {
           var style = document.createElement("style");
-          style.id = "enty-avatar-style";
+          style.id = "enty-avatar-RZ-style";
           style.textContent = rules;
           document.head.appendChild(style);
         }
@@ -69,7 +69,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">왜 아쉬워하십니까.</div>
@@ -81,7 +81,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">자네 이름이 그리 남는 걸 지켜보는 것도 즐거울 것 같아서. ('이름이 남는다면'에 치중할지 '웃기겠다'에 치중할지 해석은 당신 몫이다.)</div>
@@ -93,7 +93,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">사실이든 아니든 그렇게 남아버리긴 한 것 같습니다. 이런 우스갯소리는 시간이 지나면 잊혀지겠지만요.</div>
@@ -105,7 +105,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">너를 오래 기억하고 싶었는데.</div>
@@ -117,7 +117,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">왜 그러지 않았습니까?</div>
@@ -129,7 +129,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">그리 말하면 내가 슬퍼. 자네는 훌쩍 떠나지 않은 것처럼 구는군.</div>
@@ -141,7 +141,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">……미안합니다. (섣불리 사과한다.) 제가 고작 저였던 탓입니다.</div>
@@ -153,7 +153,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">나 참⋯⋯. 차라리 네 의지가 아니었다는 말이라도 하지 그래. (간극.) 죽을 줄 알고 있었지?</div>
@@ -165,7 +165,7 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">믿으실지 모르겠지만, 아니요…… 몰랐습니다. (행동했다. 그래야만 했기 때문에. 다른 계산은 없었다.)</div>
@@ -177,7 +177,7 @@
 <div class="ttobot-status" data-account="@Abagnale">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/9Ccmwyp.png" alt="profile" /></div>
-    <div class="ttobot-name">안눈치아타 아바냘레</div>
+    <div class="ttobot-name">안눈치아타</div>
   </div>
   <div class="ttobot-content">
     <div class="ttobot-content-text">(손을 높지 않게 뻗어 상대의 머리카락을 귀 뒤로 넘긴다. 긴 머리카락을 훑듯이 손으로 쓸고 끄트머리를 매만진다.) 떠나지 않겠다고, 말이라도 해주지⋯⋯.</div>
@@ -189,10 +189,10 @@
 <div class="ttobot-status" data-account="@Ivar">
   <div class="ttobot-avatar-wrapper">
     <div class="ttobot-avatar"><img src="https://i.imgur.com/IajptP4.png" alt="profile" /></div>
-    <div class="ttobot-name">이바르 란첸도르프</div>
+    <div class="ttobot-name">이바르</div>
   </div>
   <div class="ttobot-content">
-    <div class="ttobot-content-text">…… (당신의 손을 따라 시선이 움직인다. 그것이 이바르 란첸도르프의 껍질을 한 겹 벗긴다.) ……그래요. 몰랐지만, (긴 간극.) 그래도 혹시나 죽는다면. (또다른 간극.) ……그런 말을 남기고 떠날 수는 없다고 생각했습니다.</div>
+    <div class="ttobot-content-text">…… (당신의 손을 따라 시선이 움직인다. 그것이 이바르의 껍질을 한 겹 벗긴다.) ……그래요. 몰랐지만, (긴 간극.) 그래도 혹시나 죽는다면. (또다른 간극.) ……그런 말을 남기고 떠날 수는 없다고 생각했습니다.</div>
     
   </div>
   <div class="ttobot-time">2026년 8월 25일 오전 11:59</div>
